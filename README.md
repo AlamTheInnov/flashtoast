@@ -4,7 +4,7 @@
 
 ## Install
 ```bash
-  npm install --save flashtoast
+  npm install --save @alamtheinnov/flashtoast
 ```
 
 ## Configuration
