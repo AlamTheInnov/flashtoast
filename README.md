@@ -9,7 +9,7 @@
 
 ## Configuration
 ```javascript
-import { flashToast } from './plugins/flashtoast/dist/flashtoast';
+import { flashToast } from '@alamtheinnov/flashtoast';
 const app = createApp(App);
 app.use(flashToast)
     ...
@@ -28,7 +28,7 @@ In root vue file.
 
 CSS inside your app.scss or any.
 ```css
-@import '../js/plugins/flashtoast/dist/flashtoast.css';
+@import '@alamtheinnov/flashtoast/dist/flashtoast.css';
 ```
 
 ## Usage
