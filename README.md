@@ -33,32 +33,52 @@ CSS inside your app.scss or any.
 ## Usage
 Use inject to make available in your component.
 ```javascript
-import { inject } from 'vue';
-const toast = inject('toast');
+import { inject } from 'vue'
+export default {
+    name: 'ComponentName',
+    setup() {
+        const toast = inject('toast');
 
-toast.success({
-    title: 'Success',
-    message: 'Hello world!',
-    delay: 5000
-});
+        function showSuccessMessage() {
+            toast.success({
+                title: 'Success!',
+                message: 'Hello world!',
+                delay: 50000
+            });
+        }
 
-toast.info({
-    title: 'Info',
-    message: 'You can\'t perform this action',
-    delay: 5000
-});
+        function showInfoMessage() {
+            toast.info({
+                title: 'Info!',
+                message: 'You can\'t perform this action',
+                delay: 50000
+            });
+        }
 
-toast.info({
-    title: 'Warning',
-    message: 'Oops, are you sure?',
-    delay: 5000
-});
+        function showWarningMessage() {
+            toast.warning({
+                title: 'Warning!',
+                message: 'You can\'t perform this action',
+                delay: 50000
+            });
+        }
 
-toast.error({
-    title: 'Error',
-    message: 'Some error occurred, Please try again',
-    delay: 5000
-});
+        function showErrorMessage() {
+            toast.error({
+                title: 'Error!',
+                message: 'You can\'t perform this action',
+                delay: 50000
+            });
+        }
+
+        return {
+            showSuccessMessage,
+            showInfoMessage,
+            showWarningMessage,
+            showErrorMessage
+        }
+    }
+}
 ```
 ### Directive
 | Name               | Type     | Default | Desciption                                                              |
