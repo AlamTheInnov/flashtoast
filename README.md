@@ -90,8 +90,6 @@ export default {
 | class              | String   |         | Can be use for changing the style.                                      | 
 | zIndex             | String   | 3000    | You can give z-index of your choice according to your Application.      |
 
- :position="'top-right'" :direction="'rtl'"
-
 ### Props
 |     Name       |   Type      |          Default          |              Desciption                                                                 |
 |     ---:       |    :---:    |           :---:           |                :---                                                                     |
