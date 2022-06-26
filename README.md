@@ -85,6 +85,8 @@ export default {
     }
 }
 ```
+## Example
+![Example](./dist/example.png)
 ### Directive
 | Name               | Type     | Default | Desciption                                                              |
 | ---:               |:---:     |:---     |:---                                                                     |
