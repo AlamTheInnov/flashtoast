@@ -598,3 +598,11 @@ button.flashtoast-close-button {
 }
 
 /* Animations ends */
+
+.flashtoast.ltr {
+    text-align: left !important;
+}
+
+.flashtoast.rtl {
+    text-align: right !important;
+}
