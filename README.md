@@ -22,6 +22,10 @@ app.use(flashToast)
 ## Declare
 In root vue file. 
 ```vue
+<FlashToast /> 
+
+// OR with all available options
+
 <FlashToast :position="'top-right'" :direction="'rtl'" v-zIndex:3000 v-class:any-class />
 ```
 
