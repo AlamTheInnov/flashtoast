@@ -2,9 +2,6 @@
 
 <p>FlashToast is simple flash messages plugin for vue3 using same style like toast</p>
 
-## Demo & Example
-#### [Live demo](http://test.keen-design.ru/vue-flash-message/)
-
 ## Install
 ```bash
   npm install --save flashtoast

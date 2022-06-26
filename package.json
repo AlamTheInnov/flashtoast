@@ -5,6 +5,7 @@
         "name": "Alamgir Khan",
         "email": "shahkar15402@gmail.com"
     },
+    "private": false,
     "description": "Vue.js flash message like toast, plugin for vue3",
     "main": "dist/flashtoast.js",
     "files": [
