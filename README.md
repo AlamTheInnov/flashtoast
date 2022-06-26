@@ -43,6 +43,7 @@ export default {
     setup() {
         const toast = inject('toast');
 
+        // Examples
         function showSuccessMessage() {
             toast.success({
                 title: 'Success!',
