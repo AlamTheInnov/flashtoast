@@ -1,0 +1,33 @@
+{
+    "name": "flashtoast",
+    "version": "0.0.1",
+    "author": {
+        "name": "Alamgir Khan",
+        "email": "shahkar15402@gmail.com"
+    },
+    "description": "Vue.js flash message like toast, plugin for vue3",
+    "main": "dist/flashtoast.js",
+    "files": [
+        "dist/*",
+        "*.json",
+        "*.md"
+    ],
+    "repository": "https://github.com/AlamTheInnov/flashtoast.git",
+    "bugs": "https://github.com/AlamTheInnov/flashtoast.git/issues",
+    "license": "MIT",
+    "keywords": [
+        "vue",
+        "vue3",
+        "vuejs",
+        "flash",
+        "toast",
+        "flashtoast",
+        "flash-message",
+        "alert",
+        "alert-message",
+        "vue-alert"
+    ],
+    "peerDependencies": {
+        "vue": "^3.2.31"
+    }
+}
