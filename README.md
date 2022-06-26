@@ -98,7 +98,5 @@ export default {
 | position       |   String    | 'top-right'               | To change the position of like, top-right, bottom-right, bottom-left, top-left & center`|
 | direction      |   String    | 'ltr'                     | Change direction according to the language of application, possible options ltr & rtl   |
 
-```
-
-## License
-<p>Vue-Flash-Message is open-sourced software licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+### License
+Flashtoast is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
