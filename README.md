@@ -60,33 +60,6 @@ toast.error({
     delay: 5000
 });
 ```
-
-## Shortcut methods
-You can also use shortcut methods to output common message types
-```javascript
-this.flashSuccess('Data loaded');
-this.flashError('Validation failed');
-this.flashWarning('Spawning too much alerts is a bad UX');
-this.flashInfo('Live long and prosper');
-```
-You if you don't want to spoil your components with these methods,
-you can switch them off by using createShortcuts config option.
-```javascript
-Vue.use(VueFlashMessage, {
-  createShortcuts: false,
-});
-```
-
-## Usage with options
-```javascript
-this.flash('Hello World', 'success', {
-  timeout: 3000,
-  beforeDestroy() {
-    alert('oh no, not again!');
-  }
-});
-```
-
 ### Directive
 | Name               | Type     | Default | Desciption                                                              |
 | ---:               |:---:     |:---     |:---                                                                     |
