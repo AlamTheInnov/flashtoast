@@ -25,7 +25,7 @@ In root vue file.
 <FlashToast :position="'top-right'" :direction="'rtl'" v-zIndex:3000 v-class:any-class />
 ```
 
-CSS inside your app.scc or any.
+CSS inside your app.scss or any.
 ```css
 @import '../js/plugins/flashtoast/dist/flashtoast.css';
 ```
