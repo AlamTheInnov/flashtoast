@@ -53,9 +53,7 @@
 
 .flashtoast-close-button {
     position: relative;
-    right: -.3em;
-    top: -.3em;
-    float: right;
+    margin-bottom: auto;
     font-size: 20px;
     font-weight: 700;
     color: #FFF;
@@ -75,12 +73,6 @@
     opacity: .4;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
     filter: alpha(opacity=40)
-}
-
-.rtl .flashtoast-close-button {
-    left: -.3em;
-    float: left;
-    right: .3em
 }
 
 button.flashtoast-close-button {
@@ -253,16 +245,6 @@ button.flashtoast-close-button {
     #flashtoast-container>div.rtl {
         padding: 8px 50px 8px 8px
     }
-
-    #flashtoast-container .flashtoast-close-button {
-        right: -.2em;
-        top: -.2em
-    }
-
-    #flashtoast-container .rtl .flashtoast-close-button {
-        left: -.2em;
-        right: .2em
-    }
 }
 
 @media all and (min-width:241px) and (max-width:480px) {
@@ -273,16 +255,6 @@ button.flashtoast-close-button {
 
     #flashtoast-container>div.rtl {
         padding: 8px 50px 8px 8px
-    }
-
-    #flashtoast-container .flashtoast-close-button {
-        right: -.2em;
-        top: -.2em
-    }
-
-    #flashtoast-container .rtl .flashtoast-close-button {
-        left: -.2em;
-        right: .2em
     }
 }
 
@@ -319,14 +291,15 @@ button.flashtoast-close-button {
 .flashtoast {
     background-color: #fff;
     color: #6e6b7b !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .flashtoast .flashtoast-close-button {
     color: #6e6b7b;
     font-size: 1.75rem;
     font-weight: 400;
-    top: 0;
-    right: 0;
     text-shadow: none;
 }
 
@@ -450,11 +423,6 @@ button.flashtoast-close-button {
         top: 0.95rem;
     }
 
-    #flashtoast-container>.flashtoast .flashtoast-close-button {
-        top: 0;
-        right: -1px;
-    }
-
     #flashtoast-container>div {
         width: 20rem;
     }
@@ -517,13 +485,6 @@ button.flashtoast-close-button {
 
 .dark-layout #flashtoast-container .flashtoast .flashtoast-close-button {
     color: #b4b7bd;
-}
-
-@media (max-width: 575.98px) {
-    [data-textdirection='rtl'] .flashtoast .flashtoast-close-button {
-        top: 0.55rem !important;
-        right: 0.5rem !important;
-    }
 }
 
 [data-textdirection='rtl'] .flashtoast-top-left {

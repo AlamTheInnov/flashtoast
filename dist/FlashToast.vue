@@ -1,12 +1,19 @@
 <template>
-    <div id="flashtoast-container" class="flashtoast-container" :class="position">
+    <div id="flashtoast-container" class="flashtoast-container" :class="position" role="status">
         <TransitionGroup :name="position">
             <div v-for="(ft, index) in fts" :key="`flash-toast${index}`" class="flashtoast" :class="direction"
                 v-bind:class="`flashtoast-${ft.variant}`">
-                <button type="button" class="flashtoast-close-button" role="button"
-                    v-on:click="hideToast(ft)">×</button>
-                <div class="flashtoast-title">{{ ft.title }}</div>
-                <div class="flashtoast-message">{{ ft.message }}</div>
+                <div>
+                    <div class="flashtoast-title">{{ ft.title }}</div>
+                    <div class="flashtoast-message">{{ ft.message }}</div>
+                </div>
+                <button
+                    type="button" class="flashtoast-close-button" role="button"
+                    aria-label="close"
+                    v-on:click="hideToast(ft)"
+                >
+                    <span aria-hidden="true">×</span>
+                </button>
                 {{ hideToastOnDelay(ft) }}
             </div>
         </TransitionGroup>
